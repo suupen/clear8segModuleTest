@@ -38,14 +38,12 @@ void MY9221::sendWord(uint16_t data)
         wait_us(1);
 
         _dcki = 1;
-        wait_us(1);
 
         _di = ((temp & 0x8000) == 0x8000) ? 1 : 0;
         temp <<= 1;
         wait_us(1);
 
         _dcki = 0;
-        wait_us(1);
 
     } while(--count > 0);
 
@@ -64,7 +62,7 @@ void MY9221::latch(void)
     __disable_irq(); // 禁止
 
     _dcki = 0;
-    wait_us(1);
+    wait_us(300);
 
     _di = 1;
     wait_us(1);
