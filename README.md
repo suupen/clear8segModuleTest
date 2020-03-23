@@ -1,6 +1,9 @@
 # clear8segModuleTest
 クリア8セグメントLEDモジュールのサンプルプログラム
 
+switch scienceで販売しているモジュールの動作確認用プログラム
+https://www.switch-science.com/catalog/6279/
+
 使用環境
 windows10
 
